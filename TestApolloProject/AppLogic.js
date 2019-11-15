@@ -10,6 +10,7 @@ const QUERY_WITH_DOCUMENTARY = gql`
       ... on Fantasy {
         id
         book {
+          id
           title
           author
         }
@@ -18,6 +19,7 @@ const QUERY_WITH_DOCUMENTARY = gql`
       ... on SciFi {
         id
         book {
+          id
           title
           author
         }
@@ -26,6 +28,7 @@ const QUERY_WITH_DOCUMENTARY = gql`
       ... on Documentary {
         id
         book {
+          id
           title
           author
         }
