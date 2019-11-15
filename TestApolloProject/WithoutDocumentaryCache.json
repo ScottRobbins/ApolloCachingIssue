@@ -60,8 +60,8 @@
             },
             {
                 "type": "id",
-                "generated": false,
-                "id": "Documentary:3",
+                "generated": true,
+                "id": "ROOT_QUERY.books.2",
                 "typename": "Documentary"
             }
         ]
