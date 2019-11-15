@@ -22,7 +22,16 @@ const makeClient = async () => {
     introspectionQueryResultData,
   })
 
-  const cache = new InMemoryCache({ fragmentMatcher })
+  const cache = new InMemoryCache({
+    fragmentMatcher,
+    dataIdFromObject: object => {
+      switch(object.__typename) {
+        case 'SciFi': return 'BOOK:SCIFI'
+        case 'Documentary': return 'BOOK:DOCUMENTARY'
+        case 'Fantasy': return 'BOOK:FANTASY'
+      }
+    }
+  })
   // `storage`'s type declaration is bad but passing AsyncStorage to
   // it is perfectly valid
   await persistCache({ cache, storage: AsyncStorage })
