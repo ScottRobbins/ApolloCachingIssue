@@ -1,0 +1,72 @@
+{
+    "Fantasy:1": {
+        "id": "1",
+        "book": {
+            "type": "id",
+            "generated": true,
+            "id": "$Fantasy:1.book",
+            "typename": "Book"
+        },
+        "__typename": "Fantasy"
+    },
+    "$Fantasy:1.book": {
+        "title": "Harry Potter and the Sorcerer's stone",
+        "author": "J.K. Rowling",
+        "__typename": "Book"
+    },
+    "SciFi:2": {
+        "id": "2",
+        "book": {
+            "type": "id",
+            "generated": true,
+            "id": "$SciFi:2.book",
+            "typename": "Book"
+        },
+        "__typename": "SciFi"
+    },
+    "$SciFi:2.book": {
+        "title": "Jurassic Park",
+        "author": "Michael Crichton",
+        "__typename": "Book"
+    },
+    "Documentary:3": {
+        "id": "3",
+        "book": {
+            "type": "id",
+            "generated": true,
+            "id": "$Documentary:3.book",
+            "typename": "Book"
+        },
+        "__typename": "Documentary"
+    },
+    "$Documentary:3.book": {
+        "title": "Documentary",
+        "author": "Me",
+        "__typename": "Book"
+    },
+    "ROOT_QUERY": {
+        "books": [
+            {
+                "type": "id",
+                "generated": false,
+                "id": "Fantasy:1",
+                "typename": "Fantasy"
+            },
+            {
+                "type": "id",
+                "generated": false,
+                "id": "SciFi:2",
+                "typename": "SciFi"
+            },
+            {
+                "type": "id",
+                "generated": true,
+                "id": "ROOT_QUERY.books.2",
+                "typename": "Documentary"
+            }
+        ]
+    },
+    "ROOT_QUERY.books.2": {
+        "__typename": "Documentary"
+    }
+}
